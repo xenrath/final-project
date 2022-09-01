@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: lightblue;
+  font-size: large;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+nav {
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.4);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-right: 40px;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+nav ul li a:hover {
+  background: gray;
+  color: white;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#home {
+  padding-top: 40px;
+}
+
+.container {
+  padding: 100px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-detail {
+  width: 50%;
+}
+
+.profile-detail button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: gray;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.profile button:hover {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.profile-detail * {
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 50%;
+  text-align: right;
+}
+
+.profile-image img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+#about,
+#contact {
+  padding: 100px 80px 40px 80px;
+}
+
+.card {
+  padding: 60px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.card .card-header {
+  text-align: center;
+}
+
+.about {
+  display: inline-flex;
+}
+
+.about h1 {
+  margin-bottom: 40px;
+}
+
+.about-job {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.about-media {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.about-media p {
+  margin-bottom: 20px;
+}
+
+.about-media a {
+  margin-right: 10px;
+  width: 30px;
+  display: inline-flex;
+  vertical-align: middle;
+  border: 1px solid gray;
+  height: 30px;
+  padding: 3px;
+  background-color: white;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.about-media a:hover {
+  background-color: gray;
+  border: 1px solid darkgray;
+}
+
+#portfolio {
+  padding: 100px 100px 40px 100px;
+}
+
+.portfolio-header *,
+.blog-header *,
+.team-header {
+  margin: auto;
+  text-align: center;
+}
+
+.portfolio-header h2,
+.blog-header h2,
+.team-header h2 {
+  margin-bottom: 20px;
+}
+
+.portfolio-header h1,
+.blog-header h1,
+.team-header h1 {
+  margin-bottom: 20px;
+}
+
+.portfolio-header p,
+.blog-header p,
+.team-header {
+  width: 70%;
+}
+
+#portfolio .content {
+  display: flex;
+  margin-top: 40px;
+}
+
+#portfolio .content .content- * {
+  width: 50%;
+}
+
+#portfolio .content .content-1 {
+  margin-right: 20px;
+}
+
+#portfolio .content .content-2 {
+  margin-left: 20px;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#blog {
+  padding: 100px 100px 60px 100px;
+  margin-top: 60px;
+}
+
+#blog {
+  background-color: white;
+}
+
+#blog .content,
+#team .content {
+  display: flex;
+  margin-top: 40px;
+}
+
+#blog .content .content-1,
+#blog .content .content-2,
+#blog .content .content-3,
+#team .content .content- * {
+  width: 30%;
+}
+
+#blog .content .content-2,
+#team .content .content-2 {
+  margin: 0 40px;
+}
+
+#blog button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+}
+
+#team {
+  padding: 100px 100px 60px 100px;
+}
+
+#team .content .content-1,
+#team .content .content-2,
+#team .content .content-3 {
+  text-align: center;
+  width: 100%;
+}
+
+#team .card-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+#team .card-image.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.img-1.img-card {
+  transform: scale(1.1) rotate(360deg);
+  transition: transform 1s;
+}
+
+.img-1.img-card-rev {
+  transform: scale(1) rotate(0deg);
+  transition: transform 0.8s;
+}
+
+.img-2.img-card {
+  transform: scale(1.1) rotate(360deg);
+  transition: transform 1s;
+}
+
+.img-2.img-card-rev {
+  transform: scale(1) rotate(0deg);
+  transition: transform 0.8s;
+}
+
+.img-3.img-card {
+  transform: scale(1.1) rotate(360deg);
+  transition: transform 1s;
+}
+
+.img-3.img-card-rev {
+  transform: scale(1) rotate(0deg);
+  transition: transform 0.8s;
+}
+
+
+#team .card-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+#team .card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#team .content .desc {
+  margin-top: -20px;
+}
+
+/* 
+
+#team .content .content-1:hover,
+.card-image {
+  transform: rotateY(180deg);
+}
+
+#team .content .content-2:hover,
+.card-image {
+  transform: rotateY(180deg);
+}
+
+#team .content .content-3:hover .card-image {
+  transform: rotateY(180deg);
+}
+
+#team .card-front,
+#team .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+#team .card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+#team .card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+} */
+
+#team img {
+  width: 70%;
+}
+
+.card .image {
+  float: left;
+  margin-right: 40px;
+}
+
+.card .image img {
+  width: 120px;
+  border-radius: 100%;
+}
+
+.card .name {
+  float: left;
+  margin-right: 80px;
+}
+
+.card .name p {
+  font-size: small;
+  margin-bottom: 20px;
+}
+
+.card .name button {
+  padding: 10px 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.card .name .contact {
+  background-color: blue;
+  color: white;
+}
+
+.card .name .resume {
+  background-color: white;
+  color: black;
+}
+
+.card .name .contact:hover {
+  background-color: white;
+  color: blue;
+}
+
+.card .name .resume:hover {
+  background-color: gray;
+  color: white;
+}
+
+.card .detail {
+  display: inline-flex;
+}
+
+.card .detail .title {
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+.form {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.form form label {
+  display: inline;
+  font-weight: bold;
+}
+
+.form form input,
+.form form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px solid lightgray;
+  margin-bottom: 10px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.form button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  margin-top: 20px;
+  background-color: gray;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+footer {
+  font-size: smaller;
+  padding: 15px;
+  background-color: gray;
+  text-align: center;
+}
+
+.card.flipcard {
+  transform: rotateY(180deg);
+}
